@@ -14,7 +14,7 @@ class Panel extends CI_Controller {
 		//Segun el tipo de usuario mostramos o dirijimos al panel adecuado
 		echo $this->session->userdata('nombre');
 		if($this->session->userdata('tipo') == 0){
-			redirect(base_url('panel/user'));
+			redirect(base_url('site'));
 		}else{
 			if(valid_token()==TRUE){
 				redirect(base_url('site/'));
