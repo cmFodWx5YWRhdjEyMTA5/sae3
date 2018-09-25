@@ -98,5 +98,4 @@ class Panel extends CI_Controller {
 	}
 
 
-
 }
